@@ -13,4 +13,5 @@ header h1 {
     left: 0;
     color: #aad4e5;
     font-family: 'Andale Mono', monospace, 'Luminari', 'Chalkduster', fantasy;
+    text-shadow: 0 0 10px #aad4e5, 0 0 20px #aad4e5, 0 0 30px #aad4e5;
 }

@@ -23,7 +23,7 @@ footer {
 }
 
 .startButton:hover {
-    border: solid 3px #aad4e5;
+    text-shadow: 0 0 10px #aad4e5, 0 0 20px #aad4e5, 0 0 30px #aad4e5;
 }
 
 .message {
@@ -36,5 +36,6 @@ footer {
     color:#aad4e5;
     font-size: 16px;
     font-family: 'Andale Mono', monospace, 'Luminari', 'Chalkduster', fantasy;
+    text-shadow: 0 0 10px #aad4e5, 0 0 20px #aad4e5, 0 0 30px #aad4e5;
     display: none;
 }
