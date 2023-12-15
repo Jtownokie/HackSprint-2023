@@ -15,9 +15,10 @@ body {
     height: 300px;
     margin: 0 auto;
     padding: 20px;
-    margin-top: 27px;
+    margin-top: 20px;
     border-radius: 10px;
     background-color: beige;
+    border: solid 3px black;
     overflow: auto;
 }
 
@@ -40,9 +41,11 @@ body {
 }
 
 .button_container {
-    padding: 20px;
+    padding: 25px;
+    margin-top: 20px;
     position: static;
-    width: calc(100% - 40px);
+    max-width: 940px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     overflow: auto;
@@ -54,11 +57,17 @@ body {
 
 .sbutton, .rbutton {
     background-color: beige;
-    width: 45%;
+    border: solid 2px black;
+    width: calc(50% - 50px);
     height: 150px;
     border-radius: 10px;
     font-family: 'Apple Chancery', 'URW Chancery L', 'Bradley Hand', cursive;
     overflow: auto;
+    margin: 0;
+}
+
+.sbutton:hover, .rbutton:hover {
+    color: #DC143C;
 }
 
 .sbutton::-webkit-scrollbar, .rbutton::-webkit-scrollbar {
