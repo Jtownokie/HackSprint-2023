@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    background-image: url("../images/background.png"); /* Replace 'your-image-url.jpg' with the actual image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 14px;
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.prompt_container {
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 27px;
+    border-radius: 10px;
+    background-color: beige;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .prompt_container {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+}
+
+.prompt_container::-webkit-scrollbar {
+    display: none;
+}
+
+.prompt {
+    font-size: 15px;
+    color: black;
+    font-family: 'Apple Chancery', 'URW Chancery L', 'Bradley Hand', cursive;
+}
+
+.button_container {
+    padding: 20px;
+    position: static;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.button_container::-webkit-scrollbar {
+    display: none;
+}
+
+.sbutton, .rbutton {
+    background-color: beige;
+    width: 45%;
+    height: 150px;
+    border-radius: 10px;
+    font-family: 'Apple Chancery', 'URW Chancery L', 'Bradley Hand', cursive;
+    overflow: auto;
+}
+
+.sbutton::-webkit-scrollbar, .rbutton::-webkit-scrollbar {
+    display: none;
+}
+
+.button-text {
+    text-align: left;
+    padding: 10px;
+}

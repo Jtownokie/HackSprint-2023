@@ -1,0 +1,16 @@
+header {
+    background: black;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #aad4e5;
+    position: relative;
+}
+header h1 {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #aad4e5;
+    font-family: 'Andale Mono', monospace, 'Luminari', 'Chalkduster', fantasy;
+}
