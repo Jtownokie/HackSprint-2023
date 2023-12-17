@@ -1,3 +1,5 @@
+// startup.js
+
 const firestore = firebase.firestore();
 const startButton = document.querySelector('.startButton');
 const promptDiv = document.querySelector('.prompt');
