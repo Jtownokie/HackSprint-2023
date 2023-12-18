@@ -5,6 +5,11 @@ const startButton = document.querySelector('.startButton');
 const promptDiv = document.querySelector('.prompt');
 const rChoiceDivs = document.querySelectorAll('.rbutton-text');
 const sChoiceDivs = document.querySelectorAll('.sbutton-text');
+const buttonContainer = document.querySelector('.button_container');
+const startButtonContainer = document.querySelector('.startButton_container');
+
+// Initially hide the button container
+buttonContainer.style.display = 'none';
 
 startButton.addEventListener('click', async () => {
   try {
@@ -25,7 +30,14 @@ startButton.addEventListener('click', async () => {
     rChoiceDivs.forEach(div => div.textContent = rChoiceText);
     sChoiceDivs.forEach(div => div.textContent = sChoiceText);
 
+    // Show the button container
+    buttonContainer.style.display = 'flex';
+    
+    // Remove start button
+    startButtonContainer.style.display = 'none';
+
   } catch (error) {
     console.error('Error retrieving data from Firestore:', error);
   }
 });
+
