@@ -37,6 +37,9 @@ startButton.addEventListener('click', async () => {
     rChoiceDivs.forEach(div => div.textContent = rChoiceText);
     sChoiceDivs.forEach(div => div.textContent = sChoiceText);
 
+    // Remove start button
+    startButton.style.display = 'none';
+
   } catch (error) {
     console.error('Error retrieving data from Firestore:', error);
   }
@@ -105,3 +108,4 @@ rChoiceButton.addEventListener('click', async () => {
     console.error('Error retrieving data from Firestore:', error);
   }
 });
+
