@@ -72,6 +72,11 @@ sChoiceButton.addEventListener('click', async () => {
     rChoiceDivs.forEach(div => div.textContent = rChoiceText);
     sChoiceDivs.forEach(div => div.textContent = sChoiceText);
 
+    if (sChoiceText === "THE") {
+      startButton.style.display = 'block';
+      startButton.textContent = "Restart";
+    }
+
   } catch (error) {
     console.error('Error retrieving data from Firestore:', error);
   }
@@ -104,8 +109,12 @@ rChoiceButton.addEventListener('click', async () => {
     rChoiceDivs.forEach(div => div.textContent = rChoiceText);
     sChoiceDivs.forEach(div => div.textContent = sChoiceText);
 
+    if (sChoiceText === "THE") {
+      startButton.style.display = 'block';
+      startButton.textContent = "Restart";
+    }
+
   } catch (error) {
     console.error('Error retrieving data from Firestore:', error);
   }
 });
-
